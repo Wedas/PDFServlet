@@ -1,0 +1,20 @@
+<html>
+<body>
+	<form action="/PDFServlet/pdf" method="post"
+		enctype="multipart/form-data">
+		<p>
+			Выберите файл: <INPUT type="file" name="file" accept=".pdf"><br>
+			Выходной формат:
+		<p>
+			<select size="1" name="outputExt">
+				<option selected value="DOC">DOC</option>
+				<option value="DOCX">DOCX</option>
+			</select>
+		</p>
+		<input type="submit" value="Отправить"> <input type="reset">
+	</form>
+
+
+
+</body>
+</html>

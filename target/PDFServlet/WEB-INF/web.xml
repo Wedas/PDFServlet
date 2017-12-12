@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+	<listener>
+		<listener-class>sessionListener.DeleteFileListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>PDF</servlet-name>
+		<servlet-class>pdfServlet.PDFServlet</servlet-class>
+	</servlet>	
+
+	<servlet-mapping>
+		<servlet-name>PDF</servlet-name>
+		<url-pattern>/pdf</url-pattern>
+	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>10</session-timeout>
+	</session-config>
+</web-app>
